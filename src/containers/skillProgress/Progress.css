@@ -1,0 +1,111 @@
+/* Change colors in this file to style to your needs on a global level. 
+Certain colors are used for different and multiply types of elements. 
+For greater control over colors visit each components .scss file. */
+.meter {
+  height: 20px;
+  position: relative;
+  background: rgb(243, 239, 239);
+  border-radius: 25px;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #7e9f46;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill {
+  line-height: 3vw;
+  color: white;
+  font-family: "Winky Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.skill p {
+  margin: 0px;
+}
+
+.skills-heading {
+  color: white;
+  font-family: "Winky Sans", sans-serif;
+}
+
+.skill-bars {
+  font-size: 28px;
+  width: 40%;
+}
+
+.skills-container {
+  display: flex;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.skills-container > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.skills-image > img {
+  margin-left: 80px;
+  max-width: 90%;
+  height: auto;
+}
+
+.meter {
+  width: 90%;
+}
+
+.fp-dark {
+  border-radius: 1rem;
+}
+
+.main-skills {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.more-skill {
+  background-color: #7e9f46;
+  font-family: "Winky Sans", sans-serif;
+  padding: 0.6rem 0.8rem;
+  color: white;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-left: 0px;
+  margin-right: 2rem;
+}
+
+/* Media Query */
+@media (max-width: 1456px) {
+  .skills-bar {
+    line-height: 4rem;
+  }
+  .skills-image {
+    display: none;
+    order: 2;
+  }
+}
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  .skills-bar {
+    line-height: 3rem;
+    margin: 20px;
+  }
+  .skills-image {
+    display: none;
+    order: 2;
+  }
+}/*# sourceMappingURL=Progress.css.map */

@@ -1,0 +1,91 @@
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image-my{
+  border-radius: 3%;
+  margin-left: auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 40px 30px -14px;
+  transition: all 0.3s ease-out;
+}
+
+.wavy-frame-container {
+  position: relative;
+  width: 426px;
+  height: 642px;
+  margin: 20px;
+  
+  .wavy-frame {
+    position: relative; 
+    width: 82%;
+    height: 62%;
+    overflow: hidden; /* This will hide everything outside the frame */
+    border-radius: 60% 40% 55% 45% / 40% 50% 50% 60%;
+    border: 4px solid #202811;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: morphFrame 21s ease-in-out infinite alternate; /* Faster, more dynamic animation */
+
+    .profile-image-my {
+      position: absolute;
+      width: 156%;
+      height: auto;
+      top: -9%;
+      left: 0%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Animation for the wavy frame with more dramatic, broader movements */
+@keyframes morphFrame {
+  0% { border-radius: 70% 30% 65% 35% / 30% 60% 40% 70%; }
+  20% { border-radius: 35% 65% 30% 70% / 65% 35% 70% 30%; }
+  40% { border-radius: 60% 40% 70% 30% / 40% 60% 30% 70%; }
+  60% { border-radius: 30% 70% 40% 60% / 70% 30% 65% 35%; }
+  80% { border-radius: 65% 35% 25% 75% / 35% 65% 30% 70%; }
+  100% { border-radius: 70% 30% 65% 35% / 30% 60% 40% 70%; }
+}
+
+@media (max-width: 768px) {
+  .wavy-frame-container {
+    position: relative;
+    width: 318px;
+    height: 530px;
+    margin-top: 14rem;
+    left: 1.6rem;
+    
+    .wavy-frame {
+      position: relative; 
+      width: 82%;
+      height: 62%;
+      overflow: hidden; /* This will hide everything outside the frame */
+      border-radius: 60% 40% 55% 45% / 40% 50% 50% 60%;
+      border: 4px solid #202811;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: morphFrame 21s ease-in-out infinite alternate; /* Faster, more dynamic animation */
+  
+      .profile-image-my {
+        position: absolute;
+        width: 156%;
+        height: auto;
+        top: -24%;
+        left: -8%;
+        object-fit: cover;
+      }
+    }
+  }
+
+
+
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}

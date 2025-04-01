@@ -1,0 +1,111 @@
+.floating-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  cursor: none;
+}
+.floating-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 100;
+  transition: width 0.2s, height 0.2s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.custom-cursor::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.floating-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  pointer-events: none;
+  will-change: transform, left, top;
+  transition: transform 0.5s ease-out, opacity 0.5s ease;
+  z-index: 1;
+}
+.floating-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 70%);
+  opacity: 0.5;
+}
+.floating-icon i {
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .floating-container {
+    height: 50vh;
+  }
+}
+.fab.fa-html5 {
+  color: #e34f26;
+}
+
+.fab.fa-css3-alt {
+  color: #1572b6;
+}
+
+.fab.fa-js {
+  color: #f7df1e;
+}
+
+.fab.fa-react {
+  color: #61dafb;
+}
+
+.fab.fa-node {
+  color: #339933;
+}
+
+.fab.fa-python {
+  color: #3776ab;
+}
+
+.fab.fa-aws {
+  color: #ff9900;
+}
+
+.fab.fa-docker {
+  color: #2496ed;
+}
+
+.floating-icon i {
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.5));
+}/*# sourceMappingURL=FloatingIcons.css.map */

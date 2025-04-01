@@ -1,0 +1,40 @@
+@import "../../_globalColor";
+
+.achievement-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  font-family: $fontf;
+}
+.achievement-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+  font-family: $fontf;
+}
+.subTitle {
+  color: $subTitle;
+  font-family: $fontf;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .achievement-heading {
+    font-size: 40px;
+    font-family: $fontf;
+  }
+}
+@media (max-width: 768px) {
+  .achievement-heading {
+    font-size: 30px;
+    text-align: center;
+    font-family: $fontf;
+  }
+  .achievement-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    font-family: $fontf;
+  }
+}
