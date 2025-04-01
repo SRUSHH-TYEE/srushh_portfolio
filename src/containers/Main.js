@@ -49,7 +49,7 @@ const Main = () => {
             <Header />
             <Greeting />
             <StartupProject />
-            <Projects />
+            {/* <Projects /> */}
             <StackProgress />
             <Education />
             <WorkExperience />

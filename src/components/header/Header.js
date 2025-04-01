@@ -10,7 +10,7 @@ import {
   openSource,
   blogSection,
   talkSection, 
-  achievementSection,
+  achievementSection, 
   resumeSection
 } from "../../portfolio";
 

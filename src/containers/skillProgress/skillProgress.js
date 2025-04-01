@@ -9,7 +9,7 @@ import StyleContext from "../../contexts/StyleContext";
 export default function StackProgress() {
   const {isDark} = useContext(StyleContext);
   if (techStack.viewSkillBars) {
-    return (
+    return ( 
       <>
         <Fade bottom duration={1000} distance="20px">
           <div className="skills-container">
@@ -17,7 +17,7 @@ export default function StackProgress() {
               <div className="skills-bar">
                 <h1 className={
                       isDark
-                        ? "skills-heading-dark"
+                        ? "skills-heading-dark skills-heading"
                         : "skills-heading"
                     }>Proficiency</h1>
                 {techStack.experience.map((exp, i) => {
@@ -27,10 +27,14 @@ export default function StackProgress() {
                   return (
                     <div key={i} className={
                       isDark
-                        ? "dark-skill"
+                        ? "dark-skill skill"
                         : "skill"
                     }>
-                      <p>{exp.Stack}</p>
+                      <div className={
+                        isDark
+                        ? "stack stack-dark"
+                        :"stack"
+                      }>{exp.Stack}</div>
                       <div className="meter">
                         <span style={progressStyle}></span>
                       </div>

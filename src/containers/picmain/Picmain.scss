@@ -16,9 +16,10 @@
 
 .wavy-frame-container {
   position: relative;
-  width: 426px;
-  height: 642px;
-  margin: 20px;
+  width: 22rem;
+  height: 34rem;
+  margin-top: -1.6rem;
+  left: 1.6rem;
   
   .wavy-frame {
     position: relative; 
@@ -34,8 +35,8 @@
       position: absolute;
       width: 156%;
       height: auto;
-      top: -9%;
-      left: 0%;
+      top: -15%;
+      left: -6%;
       object-fit: cover;
     }
   }
@@ -54,10 +55,7 @@
 @media (max-width: 768px) {
   .wavy-frame-container {
     position: relative;
-    width: 318px;
-    height: 530px;
-    margin-top: 14rem;
-    left: 1.6rem;
+    margin-top: 8rem;
     
     .wavy-frame {
       position: relative; 

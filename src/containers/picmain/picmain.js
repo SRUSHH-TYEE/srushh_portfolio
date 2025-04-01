@@ -12,7 +12,7 @@ const Picmain = () => {
             src={require("../../assets/images/mypic.jpg")}
           />
         </div>
-      </div>
+      </div> 
     </div>
       );
     }

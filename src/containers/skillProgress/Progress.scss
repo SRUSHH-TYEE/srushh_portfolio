@@ -1,7 +1,7 @@
 @import "../../_globalColor";
 
 .meter {
-  height: 20px;
+  height: 1rem;
   position: relative;
   background: $progressBarBackground;
   -moz-border-radius: 25px;
@@ -12,7 +12,7 @@
   display: block;
   height: 100%;
   border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px; 
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: #7e9f46;
@@ -20,39 +20,42 @@
   overflow: hidden;
 }
 .skill {
-  line-height: 3vw;
+  line-height: 1.8rem;
   color:#7e9f46;
   font-family: $fontf;
-  font-size: 1.5rem;
   p{
     margin: 0px;
   }
 }
 .skill-dark {
-  line-height: 3vw;
   color:white;
-  font-family: $fontf;
-  font-size: 1.5rem;
-  p{
-    margin: 0px;
-  }
 }
 .skills-heading{
   color:#7e9f46;
+  font-size: $titlefs;
+  font-weight: 700;
   font-family: $fontf;
 }
 .skills-heading-dark{
   color:white;
-  font-family: $fontf;
 }
 .skill-bars {
   font-size: 28px;
   width: 40%;
 }
+
+.stack{
+  margin-inline: 1.2rem;
+  font-size: 1.2rem;
+}
+.stack-dark{
+  color: white;
+}
+
 .skills-container {
   display: flex;
   width: 90%;
-  padding: 20px 10px;
+  padding: 1.4rem 1rem;
   margin: 0px auto;
   margin-top: 2rem;
 }
@@ -66,7 +69,9 @@
   height: auto;
 }
 .meter{
-  width: 90%;
+  margin-inline: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
 }
 
 .fp {
@@ -80,7 +85,12 @@
 .main-skills{
   display: flex;
   flex-direction: column;
-  width: 40%;
+  margin-top: 1rem;
+}
+
+.more-skills{
+  margin-left: 0.8rem;
+  margin-top: 2rem;
 }
 
 .more-skill{
@@ -88,12 +98,12 @@
   font-family: $fontf;
   padding: 0.6rem 0.8rem;
   color: white;
+  border: none;
   border-radius: 0.8rem;
-  font-size: 1.5rem;
-  margin-right: 2rem;
-  margin-top: 2rem;
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
   margin-left: 0px;
-  margin-right: 2rem;
+  margin-right: 0.4rem;
 
 }
 
@@ -110,15 +120,33 @@
 }
 
 @media (max-width: 768px) {
+
+ .skill {
+    line-height: 0.8rem;
+    color:#7e9f46;
+    font-family: $fontf;
+    font-size: 1rem;
+  }
+
   .skills-container {
     flex-direction: column;
+    margin: 0rem;
   }
   .skills-bar {
-    line-height: 3rem;
-    margin: 20px;
+    line-height: 1rem;
+    margin-block: 0.8rem;
   }
   .skills-image {
     display: none;
     order: 2;
+  }
+  .meter{
+    margin-inline: 1rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.2rem;
+  }
+
+  .fp{
+    display: none;
   }
 }

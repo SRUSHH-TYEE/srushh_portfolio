@@ -12,7 +12,7 @@ const ImageCarousel = ({ images, projectName, isDark }) => {
   // Auto-carousel effect
   React.useEffect(() => {
     // Only set up auto-rotation if there are multiple images
-    if (images.length <= 1) return;
+    if (images.length <= 1) return; 
     
     let intervalId;
     if (!isPaused) {
@@ -135,15 +135,19 @@ export default function StartupProject() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="projects">
+    <Fade bottom duration={200} distance="20px" ssrFadeout={false}>
+      <div className="main project-main" id="projects">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className={
+            isDark
+            ?"project-title-dark project-title"
+            :"project-title"
+          }>{bigProjects.title}</h1>
           <p
             className={
               isDark
-                ? "dark-mode project-subtitle"
-                : "subTitle project-subtitle"
+                ? "project-subtitle-dark project-subtitle"
+                : "project-subtitle"
             }
           >
             {bigProjects.subtitle} 

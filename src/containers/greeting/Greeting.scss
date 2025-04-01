@@ -2,15 +2,15 @@
 
 .main {
   width: 90%;
-  padding: 20px 10px;
+  padding: 1.4rem 1rem;
   margin: 0px auto;
   margin-top: 4rem;
 }
 .greet-main {
   width: 90%;
-  padding: 20px 10px;
+  padding: 1.4rem 1rem;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 2rem; 
 }
 
 .greeting-main {
@@ -27,16 +27,16 @@
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 1.8rem;
 }
 
 .empty-div {
-  margin-bottom: 40px;
+  margin-bottom: 1.4rem;
 }
 
 .button-greeting-div {
   display: flex;
-  margin-top: 50px;
+  margin-top: 0.8rem;
   font-family: $fontf;
   letter-spacing: 0.1rem;
 }
@@ -48,15 +48,15 @@
 
 
 .greeting-text {
-  font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
+  font-size: 2.2rem;
+  line-height: 1.4rem;
+  color: #7e9f46 !important;
   font-family: $fontf;
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   font-family: "Winky Sans", sans-serif;
 }
 
@@ -100,10 +100,10 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    // font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    // font-size: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -111,11 +111,11 @@
     justify-content: space-around;
   }
   .greeting-text {
-    font-size: 30px;
+    // font-size: 30px;
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
+    // font-size: 16px;
     line-height: normal;
     text-align: center;
   }

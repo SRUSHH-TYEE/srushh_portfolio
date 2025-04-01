@@ -1,29 +1,65 @@
 @import "../../_globalColor";
 
+.project-main{
+  margin-top: 0rem;
+}
+
 .project-card-image {
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
   border: 1px solid white;
-  max-height: 20rem;
+  // max-height: 20rem;
   object-fit: contain;
 }
 
-.project-card-title {
-  color: $titleColor;
+
+.project-card-title{
   font-family: $fontf;
-  font-size: 2.5rem;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  margin: 1rem 0 0 0;
+  color: black;
 }
+.project-card-title-dark {
+  color: $titleColorDark !important;
+} 
+
+.project-title{
+  font-family: $fontf;
+  font-size: $titlefs;
+  line-height:$title-height ;
+  font-weight: 700;
+  margin: 1rem 0 0 0;
+  color: $titleColor;
+}
+.project-title-dark {
+  color: $titleColorDark !important;
+} 
+
+
+
 
 .project-card-subtitle{
   font-family: $fontf;
-  font-size: 1.8rem;
-  line-height: 2.1rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
   margin-left: 1.2rem;
   margin-right: 1.2rem;
+}
+
+.project-subtitle{
+  font-family: $fontf;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  margin-left: 0rem;
+  margin-right: 1.2rem;
+  color:$subTitle ;
+}
+.project-subtitle-dark{
+  font-family: $fontf;
+  color: white;
 }
 
 .project-card { 
@@ -32,15 +68,14 @@
   align-items: center;
   justify-content: center;
   background-color: $lightBackground2;
-  padding: 3rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  margin-inline: 4.5rem;
+  margin-block: 2rem;
   border-radius: 1rem;
   border: 1px solid $lightBorder1;
   animation: fadeInSlide 0.6s ease-in-out;
-  height: 25rem;
+  height: 14rem;
 }
 
 .project-card:nth-child(even) {
@@ -99,7 +134,6 @@
   border-radius: 4px;
   display: inline-flex;
   font-size: 0.75rem;
-  height: 4rem ;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
@@ -108,6 +142,7 @@
   cursor: pointer;
   transition: 0.2s ease-in;
   font-size: 1.5rem;
+  font-family: $fontf;
 }
 
 .project-card-footer .project-tag-dark{
@@ -118,7 +153,6 @@
   border-radius: 4px;
   display: inline-flex;
   font-size: 0.75rem;
-  height: 4rem ;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
@@ -127,6 +161,7 @@
   cursor: pointer;
   transition: 0.2s ease-in;
   font-size: 1.5rem;
+  font-family: $fontf;
 }
 
 /* Carousel Styles */
@@ -167,7 +202,7 @@
   animation: floatingEffect 3s ease-in-out infinite;
   
   img {
-    max-height: 20rem;
+    max-height: 100%;
     object-fit: contain;
   }
 }
@@ -243,9 +278,16 @@
     flex-direction: column;
     height: auto;
     min-height: 25rem;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    padding-block:1.2rem;
+    margin-inline: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
-  .project-card:nth-child(even) {
+   .project-card:nth-child(even) {
     flex-direction: column;
   }
 
@@ -267,5 +309,53 @@
   .carousel-dot {
     height: 8px;
     width: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    height: auto;
+    margin: 0rem;
+    padding-block: 1rem;
+    padding-inline: 0.3rem;
+  }
+
+  // .project-card:nth-child(even) {
+  //   flex-direction: column;
+  // }
+
+  // .project-image, .carousel-container {
+  //   max-width: 100%;
+  //   margin-bottom: 1rem;
+  // }
+
+  // .project-detail {
+  //   text-align: center;
+  // }
+  
+  // .carousel-arrow {
+  //   width: 2.5rem;
+  //   height: 2.5rem;
+  //   font-size: 1.2rem;
+  // }
+  
+  // .carousel-dot {
+  //   height: 8px;
+  //   width: 8px;
+  // }
+
+  .project-card-title{
+    font-size: 1.8rem;
+    margin: 0rem;
+  }
+
+  .project-card-subtitle{
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  .project-subtitle{
+    line-height: 1.4rem;
   }
 }

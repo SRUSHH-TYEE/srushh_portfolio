@@ -10,7 +10,7 @@ import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Picmain from "../picmain/picmain";
 
-export default function Greeting() {
+export default function Greeting() { 
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;

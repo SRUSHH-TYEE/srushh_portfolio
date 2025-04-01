@@ -14,7 +14,7 @@ export default function EducationCard({school}) {
           </li>
         ))
       : null;
-  };
+  }; 
   const {isDark} = useContext(StyleContext);
 
   if (!school.logo)

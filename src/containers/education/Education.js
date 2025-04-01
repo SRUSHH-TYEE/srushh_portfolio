@@ -12,7 +12,7 @@ export default function Education() {
           {educationInfo.schools.map((school, index) => (
             <EducationCard key={index} school={school} />
           ))}
-        </div>
+        </div> 
       </div>
     );
   }

@@ -4,7 +4,7 @@
 .headroom-wrapper {
   max-height: 100px;
   margin-bottom:4.5rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 /* header */
@@ -14,7 +14,7 @@
   color: $textColorDark;
 }
 
-.dark-menu li a {
+.dark-menu li a { 
   color: $textColorDark !important;
 }
 
@@ -25,9 +25,9 @@
 .header {
   background-color: $lightBackground1;
   max-width: 100%;
-  padding: 15px 20px;
+  padding: 1rem 1rem;
   margin: 0px auto;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .header ul {
