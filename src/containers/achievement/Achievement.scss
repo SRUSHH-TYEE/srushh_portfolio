@@ -1,15 +1,21 @@
 @import "../../_globalColor";
 
 .achievement-heading {
-  font-size: 56px;
-  font-weight: 400;
+  font-size: $titlefs;
+  font-weight: 700;
   line-height: normal;
   margin: 0px;
   font-family: $fontf;
+  color: $titleColor;
+}
+.achievement-heading-dark {
+  color: white;
 }
 .achievement-subtitle {
   text-transform: uppercase;
   margin: 0px;
+  font-weight: 500;
+  font-size: 1.2rem;
   margin-bottom: 50px;
   font-family: $fontf;
 }

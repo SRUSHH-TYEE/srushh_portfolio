@@ -13,7 +13,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
 
   function rgb(values) {
     return typeof values === "undefined"
-      ? null
+      ? null 
       : "rgb(" + values.join(", ") + ")";
   }
 

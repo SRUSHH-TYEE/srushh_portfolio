@@ -42,7 +42,7 @@ const greeting = {
     </>
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1iHKqR6v6isDPw6flKqgevKszm1OMrejK/view?usp=drive_link",
+    "https://drive.google.com/file/d/1IjllAEYyI00tSHZ_qbeu95DdIMH-9VTe/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -198,10 +198,9 @@ const workExperiences = {
       date: "August 2024 – Present",
       desc: "Artificial Intelligence | Data Mining",
       descBullets: [
-        "Mentored over 100 students in AI and data mining, bridging theory with real-world applications.",
+        "Mentored over 100 students in AI and data mining.",
         "Led hands-on experiments in clustering, text, image, and graph mining, enhancing practical understanding.",
-        "Taught advanced AI topics, including search algorithms, evolutionary strategies, ACO, LLMs, VLMs, and generative models (diffusion, flows).",
-        "Helped students to build AI solutions using generative AI APIs and deep learning frameworks like PyTorch and PyTorch Geometric."
+        "Helped students to build AI solutions."
       ]
     },
     {
@@ -235,7 +234,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -306,7 +305,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Have a look",
-          url: "http://nextu.se/"
+          url: "https://github.com/SRUSHH-TYEE/newsapp"
         }
       ]
     }

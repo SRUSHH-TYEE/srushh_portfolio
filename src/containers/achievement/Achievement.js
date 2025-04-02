@@ -17,8 +17,8 @@ export default function Achievement() {
             <h1
               className={
                 isDark
-                  ? "dark-mode heading achievement-heading"
-                  : "heading achievement-heading"
+                  ? "achievement-heading-dark achievement-heading"
+                  : "achievement-heading"
               }
             >
               {achievementSection.title}

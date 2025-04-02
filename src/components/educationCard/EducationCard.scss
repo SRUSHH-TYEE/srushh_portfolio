@@ -33,14 +33,21 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
+  font-size: 1.4rem;
   font-weight: 700;
   font-family: $fontf;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  height: 27px;
+  color: $titleColor;
 }
+
+
+.education-text-school-dark{
+  color: $titleColorDark;
+}
+
+
 
 .education-roundedimg {
   object-fit: cover;
@@ -56,39 +63,46 @@
 }
 
 .education-text-subHeader {
-  color: $textColor;
-  font-weight: 700;
-  font-size: 19px;
+  color: $titleColor;
+  font-weight: 500;
   font-family: $fontf;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0px;
-  padding-top: 0.8rem;
+  padding-top: 0.2rem;
   line-height: normal;
 }
 
+.education-text-subHeader-dark{
+color:white;
+}
+
 .education-text-duration {
-  color: $titleColor;
-  font-size: 19px;
+  color: $subTitle;
   letter-spacing: 0.05rem;
   font-family: $fontf;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0px;
-  padding-top: 1.3rem;
+  padding-top: 1rem;
+}
+.education-text-duration-dark{
+  color: white;
 }
 
 .education-text-desc {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
   font-family: $fontf;
-  letter-spacing: 0.05rem;
-  font-size: 1.3rem;
-
+  letter-spacing: 0.03rem;
+  font-size: 1.2rem;
+  color: $subTitle;
 }
 
 .education-text-bullets > ul {
-  margin-top: 0.5rem;
+  margin-top: 0rem;
   font-family: $fontf;
   letter-spacing: 0.05rem;
+  color: rgb(188, 188, 188);
+  font-size: 1.2rem;
 }
 
 /* Media Query */

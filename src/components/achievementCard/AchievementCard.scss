@@ -3,30 +3,29 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 11rem;
   border-radius: 1rem;
 }
 .card-title {
-  color: $titleColor;
-  font-size: 1.375rem;
-  line-height: 24px; 
+  color: black;
+  font-size: 1.2rem;
+  // line-height: 24px; 
   font-weight: 700;
-  margin: 15px 0 0 0;
   font-family: $fontf;
   letter-spacing: 0.05rem;
 }
 
 .card-subtitle {
   color: black;
-  font-size: 1.063rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
   font-family: $fontf;
   letter-spacing: 0.05rem;
 }
 .card-subtitle-dark {
-  color: $cardSubtitle;
-  font-size: 1.063rem;
-  line-height: 1.5rem;
+  color: $subTitle;
+  font-size: 1rem;
+  line-height: 1.2rem;
   font-family: $fontf;
   letter-spacing: 0.05rem;
 }
@@ -34,7 +33,7 @@
 .certificate-card {
   background-color: $lightBackground2;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  padding: 1.5rem;
+  padding: 0.8rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   -webkit-transition: all 0.3s ease;
@@ -56,7 +55,7 @@
 
 .certificate-image-div {
   position: relative;
-  height: 250px;
+  height: 11rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -78,6 +77,11 @@
   letter-spacing: 0.05rem;
 }
 
+h5{
+  margin-top:0.3rem;
+  margin-bottom: 0.1rem;
+}
+
 .certificate-card-footer Button.certificate-tag {
   background: $buttonColor;
   color: $lightBackground3;
@@ -85,12 +89,13 @@
   align-items: center;
   border-radius: 4px;
   display: inline-flex;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   justify-content: center;
   white-space: nowrap;
-  line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
+  line-height: 1.5rem;
+  margin-top: 0.1rem;
+  padding-block: 0.3rem;
+  padding-inline: 0.5rem;
   cursor: pointer;
   transition: 0.2s ease-in;
   font-family: $fontf;

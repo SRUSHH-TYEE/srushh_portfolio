@@ -31,7 +31,7 @@
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0px);
-  height: 11rem;
+  height: 9rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -55,7 +55,7 @@
 .experience-div-company {
   position: absolute;
   background: transparent;
-  height: 9rem;
+  height: 7rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -66,10 +66,9 @@
 
 .experience-text-company {
   text-align: center;
-  padding: 1.5rem;
   margin: 0;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: $fontf;
   text-align: center;
   font-weight: 700;
@@ -83,11 +82,11 @@
   object-fit: cover;
   left: 0;
   right: 0;
-  top: 7rem;
+  top: 5.5rem;
   margin-left: auto;
   margin-right: auto;
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
 }
@@ -95,12 +94,11 @@
 .experience-text-role {
   text-align: center;
   color: $textColor;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 600;
+  font-size: 1.2rem;
   font-family: $fontf;
   margin: 0px;
-  padding-top: 1.5rem;
-  line-height: normal;
+  padding-top: 0.1rem;
 }
 .dark-mode-text {
   color: $textColorDark !important;
@@ -108,10 +106,9 @@
 .experience-text-date {
   text-align: center;
   color: $textColor;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: $fontf;
   margin: 0px;
-  padding-top: 1rem;
   font-weight: 600;
 }
 
@@ -124,10 +121,10 @@
 }
 
 .experience-text-details {
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding-top: 1rem;
+  margin-top: 1.8rem;
   font-family: $fontf;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* Media Query */

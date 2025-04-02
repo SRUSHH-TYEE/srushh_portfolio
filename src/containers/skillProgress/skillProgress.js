@@ -12,12 +12,12 @@ export default function StackProgress() {
     return ( 
       <>
         <Fade bottom duration={1000} distance="20px">
-          <div className="skills-container">
+          <div className="skills-container" id="skill-progress">
             <div className="main-skills">
               <div className="skills-bar">
                 <h1 className={
                       isDark
-                        ? "skills-heading-dark skills-heading"
+                        ? "skills-heading-dark skills-heading" 
                         : "skills-heading"
                     }>Proficiency</h1>
                 {techStack.experience.map((exp, i) => {

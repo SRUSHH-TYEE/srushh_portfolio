@@ -7,9 +7,14 @@
 }
 
 .experience-heading {
-  font-size: 56px;
-  font-weight: 400;
+  font-size: $titlefs;
+  font-weight: 700;
   font-family: $fontf;
+  color: $titleColor;
+}
+
+.experience-heading-dark {
+  color: white;
 }
 
 .experience-container {
@@ -28,14 +33,14 @@
 
 @media (max-width: 1380px) {
   .experience-heading {
-    font-size: 40px;
+    // font-size: 40px;
     font-family: $fontf;
   }
 }
 
 @media (max-width: 768px) {
   .experience-heading {
-    font-size: 30px;
+    // font-size: 30px;
     text-align: center;
   }
 }
