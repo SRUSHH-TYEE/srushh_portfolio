@@ -42,7 +42,7 @@ const greeting = {
     </>
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1nCWgSu870fjwVCi_ukCJPObb0QR6Ax6O/view?usp=sharing",
+    "https://drive.google.com/file/d/1RKsWgezocH1ijiJ-gITWBAsecbj6-Sr1/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
