@@ -272,7 +272,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Have a look",
-          url: "http://nextu.se/"
+          url: "https://github.com/SRUSHH-TYEE/Trippyfy"
         }
       ]
     },
