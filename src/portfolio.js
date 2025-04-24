@@ -42,14 +42,14 @@ const greeting = {
     </>
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1RKsWgezocH1ijiJ-gITWBAsecbj6-Sr1/view?usp=sharing",
+    "https://drive.google.com/file/d/1gIn5yt5Ut34BhL3Mw6hFv_-urfmFq652/view",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 const socialMediaLinks = {
   github: "https://github.com/SRUSHH-TYEE",
   linkedin: "https://www.linkedin.com/in/srushtinayak/",
-  gmail: "srushtinayak.tech@gmail.com",
+  gmail: "nayaksrushti40@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -192,15 +192,14 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Graduate Teaching Assistant",
-      company: "University of Alabama at Birmingham",
-      companylogo: require("./assets/images/uablogo.png"),
-      date: "August 2024 – Present",
-      desc: "Artificial Intelligence | Data Mining",
+      role: "Software Developer",
+      company: "Vrajendra Holidays",
+      companylogo: require("./assets/images/Vh_logo.png"),
+      date: "Dec 2022 – July 2023",
       descBullets: [
-        "Mentored over 100 students in AI and data mining.",
-        "Led hands-on experiments in clustering, text, image, and graph mining, enhancing practical understanding.",
-        "Helped students to build AI solutions."
+        "Developed interactive UI components using Next.js, Tailwind CSS, and SCSS, including booking forms and SEO-optimized listings.",
+"Integrated real-time travel data via external APIs and implemented secure payment processing with Razorpay.",
+"Optimized backend queries in PostgreSQL and MongoDB, reducing response time by 20%."
       ]
     },
     {
@@ -450,7 +449,7 @@ const contactInfo = {
   subtitle:
     "Hire me, have a coffee chat or just say Hi",
   number: "+1 2058157222",
-  email_address: "srushtinayak.tech@gmail.com",
+  email_address: "nayaksrushti40@gmail.com",
 };
 
 // Twitter Section
